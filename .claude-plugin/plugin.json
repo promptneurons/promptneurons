@@ -1,0 +1,13 @@
+{
+  "name": "promptneurons",
+  "description": "Core skills library for Prompt Neurons LLC",
+  "version": "0.0.1",
+  "author": {
+    "name": "John Goodwin",
+    "email": "john@promptneurons.com"
+  },
+  "homepage": "https://promptneurons.com",
+  "repository": "https://github.com/promptneurons/promptneurons",
+  "license": "MIT",
+  "keywords": ["skills","install.md", "llms.txt", "best-practices", "workflows"]
+}
