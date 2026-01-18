@@ -1,0 +1,60 @@
+{
+  "name": "promptneurons Default Development Container",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": true,
+      "configureZshAsDefaultShell": true,
+      "username": "vscode",
+      "userUid": "automatic",
+      "userGid": "automatic",
+      "upgradePackages": true
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts",
+      "nodeGypDependencies": true,
+      "nvmVersion": "latest"
+    },
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11",
+      "installTools": true,
+      "optimize": true,
+      "enableShared": true
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {
+      "installDirectlyFromGitHubRelease": true,
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/azure-cli:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/git:1": {
+      "ppa": true,
+      "version": "latest"
+    }
+  },
+  "remoteUser": "vscode",
+  "containerEnv": {
+    "SHELL": "/bin/zsh",
+    "TERM": "xterm-256color"
+  },
+  "onCreateCommand": {
+    "versions": [
+      "echo 'Development Environment Setup Complete'",
+      "echo 'Tool Versions:'",
+      "node --version",
+      "python3 --version",
+      "gh --version",
+      "az --version"
+    ],
+    "ai-tools": [
+      "echo 'Installing AI CLI tools...'",
+      "npm install -g @anthropic-ai/claude-code",
+      "echo 'All AI CLI tools installed successfully'"
+    ]
+  },
+  "postCreateCommand": [
+    "echo 'promptneurons default container ready with Microsoft features'",
+    "echo 'All development tools installed and configured properly'"
+  ]
+}
