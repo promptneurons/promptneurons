@@ -50,6 +50,17 @@ mkdir -p .gemini/skills/promptneurons-skill-agent-scaffolding
 cp -r promptneurons/skills/agent-scaffolding/* .gemini/skills/promptneurons-skill-agent-scaffolding/
 ```
 
+Windows (PowerShell):
+```powershell
+# Just the install-md-generator:
+New-Item -ItemType Directory -Force -Path .gemini\skills\promptneurons-skill-install-md-generator
+Copy-Item -Recurse -Force promptneurons\skills\install-md-generator\* .gemini\skills\promptneurons-skill-install-md-generator\
+
+# Just the agent-scaffolding:
+New-Item -ItemType Directory -Force -Path .gemini\skills\promptneurons-skill-agent-scaffolding
+Copy-Item -Recurse -Force promptneurons\skills\agent-scaffolding\* .gemini\skills\promptneurons-skill-agent-scaffolding\
+```
+
 ## Setup for Claude Code
 
 ```bash
