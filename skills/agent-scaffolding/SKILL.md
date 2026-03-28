@@ -154,7 +154,7 @@ the user explicitly provides the exact command and states they understand the co
 ```
 
 ### Comprehensive (H200 — full multi-agent):
-See [AGENTS_KITSAP.md](https://github.com/promptneurons/promptneurons/blob/main/AGENTS_KITSAP.md) for a real-world example with:
+See [AGENTS_KITSAP.md](https://github.com/promptneurons/promptneurons/blob/main/examples/AGENTS_KITSAP.md) for a real-world example with:
 - Rule 0 (user override prerogative)
 - Irreversible git/filesystem action guards
 - Multi-agent coordination (Agent Mail, file reservations)
