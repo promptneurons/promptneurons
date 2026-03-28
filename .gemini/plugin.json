@@ -1,0 +1,13 @@
+{
+  "_generator": "pn-antigravity-plugin",
+  "_generatedAt": "2026-03-28T22:47:00Z",
+  "name": "promptneurons",
+  "version": "0.0.1",
+  "description": "Core skills library for Prompt Neurons LLC",
+  "author": "John Goodwin",
+  "source": "https://github.com/promptneurons/promptneurons",
+  "marketplace": "https://github.com/promptneurons/promptneurons-marketplace",
+  "skills": [
+    "promptneurons-skill-install-md-generator"
+  ]
+}
